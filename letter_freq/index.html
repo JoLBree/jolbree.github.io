@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Frequency of neighboring letters in the Game of Thrones Wikipedia page</title>
+		<!-- bootstrap for convenience -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- css for radio buttons -->
+		<style type="text/css">
+			.legend {
+				padding: 0 5px;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+	<body style="background-color: white">
+		<!-- set up anchor DOM nodes for D3 javascript -->
+		<div style="text-align: center; margin-bottom: 10px">
+			<h3>Frequency of neighboring letters in the <a href="https://en.wikipedia.org/wiki/Game_of_Thrones">Game of Thrones Wikipedia page</a></h3>
+			<p>Really just an excuse to build some <a href="https://d3js.org/">D3</a>. DA Da du du DA Da du du</p>
+			<span class="legend" style="background-color: #A2DE49">vowels <span style="font-size: 10px">(yes, y doesn't count)</span></span>
+			<span class="legend" style="background-color: #A8B9FF">consonants</span>
+			<span class="legend" style="background-color: #FADBBF">whitespace</span>
+		</div>
+		<div class="row">
+			<div class="col-md-5">
+				<h4 style="text-align: center;">Before</h4>
+				<div id="plot-before" style="text-align: center;"></div>
+			</div>
+			<div class="col-md-2" style="text-align: center">
+				<!-- <div>Select a letter</div> -->
+				<div id="letter-select"></div>
+			</div>
+			<div class="col-md-5">
+				<h4 style="text-align: center;">After</h4>
+				<div id="plot-after" style="text-align: center;"></div>
+			</div>
+		</div>
+		<div style="text-align: center; margin-top: 10px">
+			<p>
+				Text was copied from the reading mode of <a href="https://en.wikipedia.org/wiki/Game_of_Thrones">the wikipedia page</a>. Text was lowercased, and characters that were not a-z, tab, space, or newline were removed (there was a hairspace). Visualiaztion made with reference to the <a href="https://observablehq.com/@d3/bubble-chart">following</a> <a href="https://codepen.io/girliemac/pen/cDfmb">examples</a>, and some reverse engineering of <a href="https://tylernwolf.com/uxwords/index.html">this</a>.
+			</p>
+			<p></p>
+		</div>
+	</body>
+	<!-- include scripts -->
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+	<script type="text/javascript" src="data.js"></script>
+	<script type="text/javascript" src="letter_freq.js"></script>
+</html>
