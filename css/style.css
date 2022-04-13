@@ -155,6 +155,10 @@ p{
 	padding: 70px 0
 }
 
+.academics-tile{
+	padding: 10px 0;
+}
+
 .col-sm-5{
 	padding-top: 50px;
 	padding-bottom: 30px;
@@ -209,7 +213,7 @@ dd{
 
 .course{
 	text-align: center;
-	padding-top: 15px;
+	padding-top: 5px;
 	font-size: 16px;
 }
 
