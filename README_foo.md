@@ -1,2 +1,0 @@
-# jolbree
-Static portfolio page
