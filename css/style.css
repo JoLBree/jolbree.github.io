@@ -213,6 +213,9 @@ dd{
 	.comsci .description{
 		text-align: left;
 	}
+	.intern-description{
+		text-align: left;
+	}
 }
 
 .course{
