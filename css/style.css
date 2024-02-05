@@ -20,6 +20,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .navbar, .brand, .btn-simp
 
 }
 
+.microscope-disclaimer{
+	background-color: #F4F4F4;
+	text-align: center;
+	font-size: 14px;
+}
+
 .intro h1, .intro h2{
 	/*color: #444;*/
 	/*letter-spacing: 3px;*/
