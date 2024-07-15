@@ -2,15 +2,23 @@
 <html>
     <head></head>
     <body>
-        test: <span id="content">0</span>
+        fetch: <span id="content">0</span>
         <script type="text/javascript">
-            var xhttp = new XMLHttpRequest();
-            xhttp.onprogress = function(event) {
-                console.log("hi", xhttp.status);
-                document.getElementById("content").innerText = xhttp.status
-            };
-            xhttp.open("GET", "https://api-v3.mbta.com/alerts", true);
-            xhttp.send();
+            // var xhttp = new XMLHttpRequest();
+            // xhttp.onprogress = function(event) {
+            //     console.log("hi", xhttp.status);
+            //     document.getElementById("content").innerText = xhttp.status
+            // };
+            // xhttp.open("GET", "https://api-v3.mbta.com/alerts", true);
+            // xhttp.send();
+            fetch('https://api-v3.mbta.com/alerts', {
+              method: 'GET',
+              headers: {
+              }
+            }).then((response) => {
+                // To recieve data as a string we use TextDecoderStream class in pipethrough
+                document.getElementById("content").innerText = response.status
+            })
         </script>
     </body>
 </html>
