@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head></head>
+    <body>
+        test: <span id="content">0</span>
+        <script type="text/javascript">
+            var xhttp = new XMLHttpRequest();
+            xhttp.onprogress = function(event) {
+                console.log("hi", xhttp.status);
+                document.getElementById("content").innerText = xhttp.status
+            };
+            xhttp.open("GET", "https://api-v3.mbta.com/alerts", true);
+            xhttp.send();
+        </script>
+    </body>
+</html>
