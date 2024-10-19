@@ -1,0 +1,271 @@
+html{
+	overflow: hidden;
+	height: 100%;    
+}
+body {
+	overflow: auto;
+	height: 100%;
+	letter-spacing: 0px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .navbar, .brand, .btn-simple, a, .td-name, td {
+	font-family: "proxima-nova", sans-serif,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.section-content{
+	text-align: center;
+	background-color: #F4F4F4;
+	padding: 30px 12%;
+
+}
+
+.microscope-disclaimer{
+	background-color: #F4F4F4;
+	text-align: center;
+	font-size: 14px;
+}
+
+.intro h1, .intro h2{
+	/*color: #444;*/
+	/*letter-spacing: 3px;*/
+}
+
+header{
+	padding: 50px 0px;
+	background-color: #F4F4F4;
+}
+
+.headshot{
+	background: url('../img/headshot.jpg') center no-repeat;
+	width: 250px;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 50px;
+	background-size: cover;
+	border-radius: 200px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+h1{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 1.8em;
+}
+
+h2{
+	font-size: 1.8em;
+}
+
+.intro p{
+	margin-top: 20px;
+	font-size: 1.5em;
+}
+
+a, a:active, a:focus, 
+button, button:focus, button:active, 
+.btn, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+	outline: none;
+	outline: 0;
+}
+
+input::-moz-focus-inner {
+	border: 0;
+}
+
+.section-header{
+	background-attachment: fixed;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 132px 0;
+}
+
+.section-header.comsci{
+	background-image: url('../img/sublime_med.jpg');
+}
+
+.section-header.datasci{
+	background-image: url('../img/data_center.jpg');
+}
+
+.section-header.research{
+	background-image: url('../img/microscope.jpg');
+}
+
+.section-header.academics{
+	background-image: url('../img/books_med.jpg');
+}
+
+.section-header.crossroads{
+	background-image: url('../img/spark.jpg');
+}
+
+.h3, h3{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 30px;
+	color: #F4F4F4;
+	letter-spacing: 2px;
+}
+
+h4{
+	font-size: 16px;
+}
+
+p{
+	font-size: 16px;
+}
+
+.project-icon{
+	text-align: center;
+	width: 100px;
+	height: 100px;
+}
+
+.cockroach-icon{
+	width: 320px;
+}
+
+.culture-icon{
+	width: 200px;
+}
+
+.cds-icon{
+	width: 205px;
+}
+
+.broad-cds-wrapper {
+	padding-bottom: 10px;
+}
+
+.course-icon{
+	text-align: center;
+	width: 120px;
+	height: 120px;
+}
+
+.comsci-tile{
+	padding: 20px 0;
+}
+
+.comsci-tile.current {
+	padding: 70px 0
+}
+
+.academics-tile{
+	padding: 10px 0;
+}
+
+.col-sm-5{
+	padding-top: 50px;
+	padding-bottom: 30px;
+	padding-right: 6%;
+	padding-left: 6%;
+	text-align: center;
+}
+
+.research.section-content{
+	/*padding-top: 100px;
+	padding-bottom: 100px;*/
+	font-size: 16px; 
+}
+
+dl{
+	margin-bottom: 0px;
+	margin-top: 50px;
+}
+
+dd{
+	padding-bottom: 20px;
+	padding-right: 6%;
+	padding-left: 6%;
+}
+
+@media (min-width: 768px) {
+	dt {
+		/*padding-left: 10%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		float: left;
+		width: 32%;
+		overflow: hidden;
+		clear: left;*/
+		text-align: right;
+		/*text-overflow: ellipsis;
+		white-space: normal;*/ 
+		
+	}
+	dd {
+		/*margin-left: 35%;*/
+		text-align: left;
+		/*padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 10%;
+		padding-left: 0;*/
+	}
+	.comsci .description{
+		text-align: left;
+	}
+	.intern-description{
+		text-align: left;
+	}
+}
+
+.course{
+	text-align: center;
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+.opening{
+	padding-top: 3%;
+}
+
+.closing{
+	padding-bottom:2%;
+	line-height: 1.7;
+}
+
+.crossroads-message{
+	margin: 0 13%;
+	color: #000;
+}
+
+.crossroads-topic{
+	font-size: 30px;
+	padding: 10px 0;
+	line-height: 1.5;
+}
+
+.crossroads-para p{
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.connect-icons{
+	float: right;
+	padding: 10px 10px;
+}
+
+.project-type{
+	line-height: 220px;
+}
+
+.citation {
+	font-size: 15px;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
